@@ -1,0 +1,142 @@
+import { motion } from "framer-motion";
+import { Users } from "lucide-react";
+
+const teams = [
+  {
+    name: "Senioren 1",
+    category: "Senioren",
+    players: 22,
+    trainer: "Coach A. Jansen",
+    color: "bg-field-green",
+  },
+  {
+    name: "Senioren 2",
+    category: "Senioren",
+    players: 18,
+    trainer: "Coach B. de Vries",
+    color: "bg-field-green",
+  },
+  {
+    name: "JO19",
+    category: "Junioren",
+    players: 16,
+    trainer: "Coach C. Bakker",
+    color: "bg-primary",
+  },
+  {
+    name: "JO17",
+    category: "Junioren",
+    players: 18,
+    trainer: "Coach D. Smit",
+    color: "bg-primary",
+  },
+  {
+    name: "JO15",
+    category: "Junioren",
+    players: 15,
+    trainer: "Coach E. van Dijk",
+    color: "bg-primary",
+  },
+  {
+    name: "JO13",
+    category: "Pupillen",
+    players: 14,
+    trainer: "Coach F. Peters",
+    color: "bg-secondary",
+  },
+  {
+    name: "JO11",
+    category: "Pupillen",
+    players: 12,
+    trainer: "Coach G. Mulder",
+    color: "bg-secondary",
+  },
+  {
+    name: "JO9",
+    category: "Pupillen",
+    players: 10,
+    trainer: "Coach H. Visser",
+    color: "bg-secondary",
+  },
+];
+
+const Teams = () => {
+  return (
+    <section id="teams" className="section-padding bg-background">
+      <div className="container-custom">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
+            Onze Teams
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Van de jongste spelers tot de ervaren senioren, ontdek onze diverse teams.
+          </p>
+        </motion.div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {teams.map((team, index) => (
+            <motion.div
+              key={team.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              className="group relative bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border"
+            >
+              {/* Header with team color */}
+              <div className={`${team.color} p-4`}>
+                <h3 className="font-heading font-bold text-xl text-primary-foreground">
+                  {team.name}
+                </h3>
+                <span className="text-sm text-primary-foreground/80">
+                  {team.category}
+                </span>
+              </div>
+              
+              {/* Content */}
+              <div className="p-4">
+                <div className="flex items-center gap-2 text-muted-foreground mb-2">
+                  <Users className="w-4 h-4" />
+                  <span className="text-sm">{team.players} spelers</span>
+                </div>
+                <p className="text-sm text-foreground font-medium">
+                  {team.trainer}
+                </p>
+              </div>
+
+              {/* Hover effect */}
+              <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            </motion.div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mt-12"
+        >
+          <p className="text-muted-foreground mb-4">
+            Wil je ook deel uitmaken van een van onze teams?
+          </p>
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center px-6 py-3 font-heading font-bold bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            Meld Je Aan
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Teams;
