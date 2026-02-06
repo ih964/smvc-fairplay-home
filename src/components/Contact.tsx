@@ -5,7 +5,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Adres",
-    details: ["Sportpark Fair Play", "Sportlaan 1", "1234 AB Voorbeeldstad"],
+    details: ["Pinksterbloem 91 A", "4102 KD Culemborg"],
   },
   {
     icon: Phone,
@@ -144,15 +144,18 @@ const Contact = () => {
               </motion.div>
             ))}
 
-            {/* Map placeholder */}
+            {/* Map */}
             <div className="h-64 bg-muted rounded-xl overflow-hidden border border-border">
-              <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 mx-auto mb-2 text-primary" />
-                  <p>Sportpark Fair Play</p>
-                  <p className="text-sm">Voorbeeldstad</p>
-                </div>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.8!2d5.228!3d51.957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63e5c8b8b8b8b%3A0x0!2sPinksterbloem%2091%2C%204102%20KD%20Culemborg!5e0!3m2!1snl!2snl!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Locatie SMVC Fair Play"
+              />
             </div>
           </motion.div>
         </div>
