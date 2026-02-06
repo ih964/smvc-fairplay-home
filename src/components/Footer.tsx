@@ -91,7 +91,15 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-secondary-foreground/10 text-center">
           <p className="text-secondary-foreground/50 text-sm">
-            © {currentYear} SMVC Fair Play. Alle rechten voorbehouden.
+            © {currentYear} SMVC Fair Play. Alle rechten voorbehouden. Gemaakt door{" "}
+            <a 
+              href="https://harkasit.nl" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Harkas IT
+            </a>
           </p>
         </div>
       </div>
