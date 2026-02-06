@@ -10,7 +10,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telefoon",
-    details: ["06 - 12345678"],
+    details: ["06-14393886"],
   },
   {
     icon: Mail,
@@ -20,7 +20,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Trainingstijden",
-    details: ["Ma, Wo, Vr: 18:00 - 21:00", "Za: 09:00 - 12:00"],
+    details: ["Wo, Vr: 18:00 - 21:00"],
   },
 ];
 
@@ -35,9 +35,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Contact
-          </h2>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">Contact</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Heb je vragen of wil je meer weten over onze club? Neem gerust contact met ons op!
           </p>
@@ -52,9 +50,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="bg-background rounded-2xl p-8 shadow-lg border border-border"
           >
-            <h3 className="font-heading text-2xl font-bold text-foreground mb-6">
-              Stuur een Bericht
-            </h3>
+            <h3 className="font-heading text-2xl font-bold text-foreground mb-6">Stuur een Bericht</h3>
             <form className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
@@ -132,9 +128,7 @@ const Contact = () => {
                   <info.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-foreground mb-1">
-                    {info.title}
-                  </h4>
+                  <h4 className="font-heading font-bold text-foreground mb-1">{info.title}</h4>
                   {info.details.map((detail, i) => (
                     <p key={i} className="text-muted-foreground">
                       {detail}
