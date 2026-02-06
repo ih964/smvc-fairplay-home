@@ -4,58 +4,27 @@ import { Users } from "lucide-react";
 const teams = [
   {
     name: "Senioren 1",
-    category: "Senioren",
-    players: 22,
-    trainer: "Coach A. Jansen",
+    category: "Zondag",
     color: "bg-field-green",
   },
   {
     name: "Senioren 2",
-    category: "Senioren",
-    players: 18,
-    trainer: "Coach B. de Vries",
+    category: "Zondag",
     color: "bg-field-green",
   },
   {
-    name: "JO19",
-    category: "Junioren",
-    players: 16,
-    trainer: "Coach C. Bakker",
+    name: "Senioren 3",
+    category: "Zondag",
+    color: "bg-field-green",
+  },
+  {
+    name: "Senioren 2",
+    category: "Zaterdag",
     color: "bg-primary",
   },
   {
-    name: "JO17",
-    category: "Junioren",
-    players: 18,
-    trainer: "Coach D. Smit",
-    color: "bg-primary",
-  },
-  {
-    name: "JO15",
-    category: "Junioren",
-    players: 15,
-    trainer: "Coach E. van Dijk",
-    color: "bg-primary",
-  },
-  {
-    name: "JO13",
-    category: "Pupillen",
-    players: 14,
-    trainer: "Coach F. Peters",
-    color: "bg-secondary",
-  },
-  {
-    name: "JO11",
-    category: "Pupillen",
-    players: 12,
-    trainer: "Coach G. Mulder",
-    color: "bg-secondary",
-  },
-  {
-    name: "JO9",
-    category: "Pupillen",
-    players: 10,
-    trainer: "Coach H. Visser",
+    name: "JO17-1",
+    category: "Jeugd",
     color: "bg-secondary",
   },
 ];
@@ -101,13 +70,10 @@ const Teams = () => {
               
               {/* Content */}
               <div className="p-4">
-                <div className="flex items-center gap-2 text-muted-foreground mb-2">
+                <div className="flex items-center gap-2 text-muted-foreground">
                   <Users className="w-4 h-4" />
-                  <span className="text-sm">{team.players} spelers</span>
+                  <span className="text-sm">Team {team.category}</span>
                 </div>
-                <p className="text-sm text-foreground font-medium">
-                  {team.trainer}
-                </p>
               </div>
 
               {/* Hover effect */}
