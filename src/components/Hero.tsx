@@ -36,7 +36,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-heading text-4xl md:text-6xl lg:text-7xl font-black text-secondary mb-4"
+          className="font-heading text-4xl md:text-6xl lg:text-7xl font-black text-primary mb-4 drop-shadow-lg"
         >
           SMVC Fair Play
         </motion.h1>
@@ -45,7 +45,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-lg md:text-xl text-secondary/80 max-w-2xl mx-auto mb-8"
+          className="text-lg md:text-xl text-white max-w-2xl mx-auto mb-8 drop-shadow-md"
         >
           Waar passie voor voetbal en sportiviteit samenkomen. 
           Welkom bij onze vereniging!
@@ -59,13 +59,13 @@ const Hero = () => {
         >
           <a
             href="#about"
-            className="inline-flex items-center justify-center px-8 py-4 font-heading font-bold text-lg bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="inline-flex items-center justify-center px-8 py-4 font-heading font-bold text-lg bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             Ontdek Meer
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 font-heading font-bold text-lg bg-transparent border-2 border-secondary text-secondary rounded-lg hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
+            className="inline-flex items-center justify-center px-8 py-4 font-heading font-bold text-lg bg-white/20 backdrop-blur-sm border-2 border-white text-white rounded-lg hover:bg-white hover:text-secondary transition-all duration-300"
           >
             Word Lid
           </a>
