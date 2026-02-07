@@ -82,6 +82,27 @@ const Teams = () => {
           ))}
         </div>
 
+        {/* Competitie Stand */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16"
+        >
+          <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
+            Competitie Stand
+          </h3>
+          <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden">
+            <iframe 
+              src="https://embed.hollandsevelden.nl/competities/2025-2026/zuid-1/zo/4c/?sTFC=%23141414&sBC=%23ffffff&sAC=%23f5f5f0" 
+              className="w-full min-w-[470px]"
+              style={{ height: '1700px', border: 0 }}
+              title="Competitie stand SMVC Fair Play"
+            />
+          </div>
+        </motion.div>
+
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
