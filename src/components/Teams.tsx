@@ -93,11 +93,11 @@ const Teams = () => {
           <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
             Competitie Stand
           </h3>
-          <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden">
+          <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden overflow-x-auto">
             <iframe 
               src="https://embed.hollandsevelden.nl/competities/2025-2026/zuid-1/zo/4c/?sTFC=%23141414&sBC=%23ffffff&sAC=%23f5f5f0" 
-              className="w-full min-w-[470px]"
-              style={{ height: '1700px', border: 0 }}
+              className="w-full"
+              style={{ height: '1700px', border: 0, minWidth: '320px' }}
               title="Competitie stand SMVC Fair Play"
             />
           </div>
