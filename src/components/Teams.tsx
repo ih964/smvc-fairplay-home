@@ -6,26 +6,31 @@ const teams = [
     name: "Senioren 1",
     category: "Zondag",
     color: "bg-field-green",
+    textColor: "text-white",
   },
   {
     name: "Senioren 2",
     category: "Zondag",
     color: "bg-field-green",
+    textColor: "text-white",
   },
   {
     name: "Senioren 3",
     category: "Zondag",
     color: "bg-field-green",
+    textColor: "text-white",
   },
   {
     name: "Senioren 2",
     category: "Zaterdag",
     color: "bg-primary",
+    textColor: "text-primary-foreground",
   },
   {
     name: "JO17-1",
     category: "Jeugd",
     color: "bg-secondary",
+    textColor: "text-secondary-foreground",
   },
 ];
 
@@ -60,10 +65,10 @@ const Teams = () => {
             >
               {/* Header with team color */}
               <div className={`${team.color} p-4`}>
-                <h3 className="font-heading font-bold text-xl text-primary-foreground">
+                <h3 className={`font-heading font-bold text-xl ${team.textColor}`}>
                   {team.name}
                 </h3>
-                <span className="text-sm text-primary-foreground/80">
+                <span className={`text-sm ${team.textColor} opacity-80`}>
                   {team.category}
                 </span>
               </div>
