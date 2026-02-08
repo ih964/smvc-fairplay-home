@@ -9,14 +9,22 @@ import tackle from "@/assets/gallery/tackle.jpg";
 import teamspirit from "@/assets/gallery/teamspirit.jpg";
 import hug from "@/assets/gallery/hug.jpg";
 import coach from "@/assets/gallery/coach.jpg";
+import celebration2 from "@/assets/gallery/celebration2.jpg";
+import pass from "@/assets/gallery/pass.jpg";
+import bench from "@/assets/gallery/bench.jpg";
+import celebration3 from "@/assets/gallery/celebration3.jpg";
 
 const photos = [
   { src: teamspirit, alt: "Teamgeest", span: "md:col-span-2" },
   { src: celebration, alt: "Doelpunt vieren", span: "" },
+  { src: celebration2, alt: "Feest na goal", span: "" },
   { src: action, alt: "Actie op het veld", span: "" },
   { src: duel, alt: "Duel", span: "" },
+  { src: pass, alt: "Aanval", span: "md:col-span-2" },
   { src: hug, alt: "Samenwerking", span: "" },
+  { src: celebration3, alt: "Samen vieren", span: "" },
   { src: tackle, alt: "Tackle", span: "md:col-span-2" },
+  { src: bench, alt: "Langs de lijn", span: "" },
   { src: coach, alt: "Trainer langs de lijn", span: "" },
   { src: teamBack, alt: "Team van achteren", span: "" },
 ];
