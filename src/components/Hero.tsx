@@ -64,7 +64,7 @@ const Hero = () => {
             Word Lid
           </a>
           <a
-            href="#teams"
+            href="#uitslagen"
             className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 font-heading font-bold text-base md:text-lg bg-field-green text-white rounded-lg hover:bg-field-green/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
           >
             Bekijk Uitslagen

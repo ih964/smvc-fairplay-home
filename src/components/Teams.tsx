@@ -89,14 +89,15 @@ const Teams = () => {
 
         {/* Competitie Stand */}
         <motion.div
+          id="uitslagen"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-16"
+          className="mt-16 scroll-mt-24"
         >
           <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
-            Competitie Stand
+            Uitslagen & Standen
           </h3>
           <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden">
             <div 
