@@ -18,7 +18,7 @@ const MobileQuickActions = () => {
           <span>Word Lid</span>
         </a>
         <a
-          href="#teams"
+          href="#uitslagen"
           className="flex flex-col items-center justify-center gap-1 py-3 px-2 rounded-lg bg-field-green text-white font-heading font-bold text-xs transition-all active:scale-95"
         >
           <Trophy className="w-5 h-5" />
