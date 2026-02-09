@@ -1,14 +1,22 @@
 import { useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
-// Placeholder sponsor logos - vervang deze met echte sponsor logo's
+import harkasIt from "@/assets/sponsors/harkas_it.png";
+import kcTraining from "@/assets/sponsors/kc_training.jpg";
+import limpeza from "@/assets/sponsors/limpeza.jpg";
+import afagAdvies from "@/assets/sponsors/afag_advies.jpg";
+import saddikElektro from "@/assets/sponsors/saddik_elektro.jpg";
+import kcCar from "@/assets/sponsors/kc_car.jpeg";
+import ionut from "@/assets/sponsors/ionut.jpeg";
+
 const sponsors = [
-  { name: "Sponsor 1", logo: "/placeholder.svg" },
-  { name: "Sponsor 2", logo: "/placeholder.svg" },
-  { name: "Sponsor 3", logo: "/placeholder.svg" },
-  { name: "Sponsor 4", logo: "/placeholder.svg" },
-  { name: "Sponsor 5", logo: "/placeholder.svg" },
-  { name: "Sponsor 6", logo: "/placeholder.svg" },
+  { name: "Harkas IT", logo: harkasIt },
+  { name: "KC Training Coaching Advies", logo: kcTraining },
+  { name: "Limpeza Klusbedrijf", logo: limpeza },
+  { name: "AFAG Advies", logo: afagAdvies },
+  { name: "Saddik Elektro", logo: saddikElektro },
+  { name: "KC Car Care", logo: kcCar },
+  { name: "Ionut Uitzendbureau", logo: ionut },
 ];
 
 const Sponsors = () => {
@@ -44,11 +52,11 @@ const Sponsors = () => {
                 key={index}
                 className="flex-none w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 px-4"
               >
-                <div className="bg-card rounded-xl p-6 h-24 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow">
+                <div className="bg-card rounded-xl p-6 h-28 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <img
                     src={sponsor.logo}
                     alt={sponsor.name}
-                    className="max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                    className="max-h-20 max-w-full w-auto object-contain"
                   />
                 </div>
               </div>
