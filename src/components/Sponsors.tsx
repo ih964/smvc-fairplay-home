@@ -52,11 +52,11 @@ const Sponsors = () => {
                 key={index}
                 className="flex-none w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 px-4"
               >
-                <div className="bg-card rounded-xl p-6 h-36 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow">
+                <div className="bg-card rounded-xl p-8 h-44 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <img
                     src={sponsor.logo}
                     alt={sponsor.name}
-                    className="max-h-28 max-w-full w-auto object-contain"
+                    className="max-h-36 max-w-full w-auto object-contain"
                   />
                 </div>
               </div>
