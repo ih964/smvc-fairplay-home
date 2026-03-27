@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -9,8 +10,17 @@ import News from "@/components/News";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MobileQuickActions from "@/components/MobileQuickActions";
+import LoginGate from "@/components/LoginGate";
 
 const Index = () => {
+  const [authenticated, setAuthenticated] = useState(
+    () => sessionStorage.getItem("authenticated") === "true"
+  );
+
+  if (!authenticated) {
+    return <LoginGate onLogin={() => setAuthenticated(true)} />;
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
