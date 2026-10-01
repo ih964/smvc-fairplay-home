@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -10,34 +9,23 @@ import News from "@/components/News";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MobileQuickActions from "@/components/MobileQuickActions";
-import LoginGate from "@/components/LoginGate";
 
-const Index = () => {
-  const [authenticated, setAuthenticated] = useState(
-    () => sessionStorage.getItem("authenticated") === "true"
-  );
-
-  if (!authenticated) {
-    return <LoginGate onLogin={() => setAuthenticated(true)} />;
-  }
-
-  return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main className="pb-20 md:pb-0">
-        <Hero />
-        <About />
-        <Teams />
-        <Gallery />
-        <Volunteers />
-        <Sponsors />
-        <News />
-        <Contact />
-      </main>
-      <Footer />
-      <MobileQuickActions />
-    </div>
-  );
-};
+const Index = () => (
+  <div className="min-h-screen bg-background">
+    <Header />
+    <main className="pb-20 md:pb-0">
+      <Hero />
+      <About />
+      <Teams />
+      <Gallery />
+      <Volunteers />
+      <Sponsors />
+      <News />
+      <Contact />
+    </main>
+    <Footer />
+    <MobileQuickActions />
+  </div>
+);
 
 export default Index;
